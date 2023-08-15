@@ -5,30 +5,30 @@
       "properties": {
         "infinite": {
           "default": true,
-          "title": "admin/editor.slider-layout.infinite",
+          "title": "admin/editor.main-layout.infinite",
           "type": "boolean"
         },
         "showNavigationArrows": {
           "default": "always",
           "enum": ["mobileOnly", "desktopOnly", "always", "never"],
-          "title": "admin/editor.slider-layout.showNavigation",
+          "title": "admin/editor.main-layout.showNavigation",
           "type": "string"
         },
         "showPaginationDots": {
           "default": "always",
           "enum": ["mobileOnly", "desktopOnly", "always", "never"],
-          "title": "admin/editor.slider-layout.showPaginationDots",
+          "title": "admin/editor.main-layout.showPaginationDots",
           "type": "string"
         },
         "usePagination": {
           "default": true,
-          "title": "admin/editor.slider-layout.usePagination",
+          "title": "admin/editor.main-layout.usePagination",
           "type": "boolean"
         },
         "fullWidth": {
           "default": true,
-          "title": "admin/editor.slider-layout.sliderFullWidth",
-          "description": "admin/editor.slider-layout.sliderFullWidthDescription",
+          "title": "admin/editor.main-layout.sliderFullWidth",
+          "description": "admin/editor.main-layout.sliderFullWidthDescription",
           "type": "boolean"
         }
       }

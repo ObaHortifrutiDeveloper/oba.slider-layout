@@ -1,4 +1,4 @@
-📢 Use this project, [contribute](https://github.com/vtex-apps/slider-layout) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+📢 Use this project, [contribute](https://github.com/vtex-apps/main-layout) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
 
 # Slider Layout
 
@@ -8,9 +8,9 @@
 
 Slider Layout is a flexible solution for building block sliders in VTEX Store Framework, such as a carousel component.
 
-![](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/vtex-slider-layout-0.png)
+![](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/vtex-main-layout-0.png)
 
-> _To use the Slider layout as a substitute for the [Carousel app](https://github.com/vtex-apps/carousel), read the [Building a Carousel through lists and Slider Layout](https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-carousel-using-slider-layout) documentation._
+> _To use the Slider layout as a substitute for the [Carousel app](https://github.com/vtex-apps/carousel), read the [Building a Carousel through lists and Slider Layout](https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-carousel-using-main-layout) documentation._
 
 ## Google Analytics 4 Integration
 
@@ -29,25 +29,25 @@ After setup, Google Analytics can track your internal promotions and generate re
 
 ## Configuration
 
-1. Add the `slider-layout` app to your theme dependencies in the `manifest.json` file:
+1. Add the `main-layout` app to your theme dependencies in the `manifest.json` file:
 
 ```json
 "dependencies": {
-  "vtex.slider-layout": "0.x"
+  "vtex.main-layout": "0.x"
 }
 ```
 
-Now, you can use all blocks exported by the `slider-layout` app. See the complete list below:
+Now, you can use all blocks exported by the `main-layout` app. See the complete list below:
 
 | Block name            | Description                                                                                                                                                                                                          |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `slider-layout`       | ![https://img.shields.io/badge/-Mandatory-red](https://img.shields.io/badge/-Mandatory-red) Builds block sliders for your store through its `children` list blocks. |
-| `slider-layout-group` | Enables you to keep a group of `slider-layout` blocks synched with each other. For more information about this, see the Advanced configuration section below.                                                        |
+| `main-layout`       | ![https://img.shields.io/badge/-Mandatory-red](https://img.shields.io/badge/-Mandatory-red) Builds block sliders for your store through its `children` list blocks. |
+| `main-layout-group` | Enables you to keep a group of `main-layout` blocks synched with each other. For more information about this, see the Advanced configuration section below.                                                        |
 
-2. Add the `slider-layout` block to your template. For example:
+2. Add the `main-layout` block to your template. For example:
 
 ```json
-  "slider-layout#text-test": {
+  "main-layout#text-test": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -119,23 +119,23 @@ Now, you can use all blocks exported by the `slider-layout` app. See the complet
 
 ## Advanced configuration
 
-The `slider-layout-group` block synchronizes the slides rendered by each `slider-layout` block declared in it.
+The `main-layout-group` block synchronizes the slides rendered by each `main-layout` block declared in it.
 
-Therefore, the `slider-layout-group` does not render any specific component on the store UI. It is really a logical block that only expects to receive a `children` block list containing the desired `slider-layout` blocks that should be rendered. For example:
+Therefore, the `main-layout-group` does not render any specific component on the store UI. It is really a logical block that only expects to receive a `children` block list containing the desired `main-layout` blocks that should be rendered. For example:
 
 ```json
 {
-  "slider-layout-group#test": {
-    "children": ["slider-layout#1", "slider-layout#2", "slider-layout#3"]
+  "main-layout-group#test": {
+    "children": ["main-layout#1", "main-layout#2", "main-layout#3"]
   }
 }
 ```
 
-Below, you can find a practical example using three `slider-layout` blocks inside of a `slider-layout-group`. Each `slider-layout` received three `rich-text` blocks as `children` to serve as individual slides:
+Below, you can find a practical example using three `main-layout` blocks inside of a `main-layout-group`. Each `main-layout` received three `rich-text` blocks as `children` to serve as individual slides:
 
-![slider-layout-group demo](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/vtex-slider-layout-3.gif)
+![main-layout-group demo](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/vtex-main-layout-3.gif)
 
-> ⚠️ **\*All `slider-layout` blocks declared in the `slider-layout-group` must have the same configuration, meaning the same props and values**. Due to implementation rules, they can only differ in their `children` block list. Keep in mind that declaring `slider-layout` blocks with different configurations will result in unexpected behavior, leading to errors that are **not** supported by the VTEX Store Framework team.\*
+> ⚠️ **\*All `main-layout` blocks declared in the `main-layout-group` must have the same configuration, meaning the same props and values**. Due to implementation rules, they can only differ in their `children` block list. Keep in mind that declaring `main-layout` blocks with different configurations will result in unexpected behavior, leading to errors that are **not** supported by the VTEX Store Framework team.\*
 
 ## Customization
 

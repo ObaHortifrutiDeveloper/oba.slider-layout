@@ -112,7 +112,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.15.2] - 2020-10-29
 ### Fixed
-- Navigation controls would not work when the `slider` was placed inside an `<a>` tag. This is the case if you were to place a `slider-layout` inside of a `product-summary`.
+- Navigation controls would not work when the `slider` was placed inside an `<a>` tag. This is the case if you were to place a `main-layout` inside of a `product-summary`.
 
 ## [0.15.1] - 2020-09-24
 ### Fixed
@@ -124,7 +124,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.14.0] - 2020-08-19
 ### Added
-- Proper support for dynamic `slider-layout`s.
+- Proper support for dynamic `main-layout`s.
 
 ## [0.13.2] - 2020-08-19
 ### Added
@@ -136,7 +136,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.13.0] - 2020-08-12
 ### Added
-- New `SliderLayoutGroup` component and its `slider-layout-group` interface.
+- New `SliderLayoutGroup` component and its `main-layout-group` interface.
 
 ## [0.12.0] - 2020-08-06
 ### Added
@@ -196,7 +196,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.7.3] - 2019-12-17
 
 ### Added
-- Recipe about how to use slider-layout as carousel
+- Recipe about how to use main-layout as carousel
 
 ## [0.7.2] - 2019-12-05
 
@@ -245,4 +245,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.1.0] - 2019-09-10
 ### Added
-- First implementation of `slider-layout`.
+- First implementation of `main-layout`.

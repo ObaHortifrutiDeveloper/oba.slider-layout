@@ -1,9 +1,9 @@
 {
-  "admin/editor.slider-layout.title": "Slider Layout",
-  "admin/editor.slider-layout.infinite": "Unendlich",
-  "admin/editor.slider-layout.showNavigation": "Navigationspfeile anzeigen",
-  "admin/editor.slider-layout.showPaginationDots": "Seitenumbruch-Punkte anzeigen",
-  "admin/editor.slider-layout.usePagination": "Seitennavigation verwenden",
-  "admin/editor.slider-layout.sliderFullWidth": "Volle Breite",
-  "admin/editor.slider-layout.sliderFullWidthDescription": "Legt fest, ob die Diapositive die volle verfügbare Breite füllen sollen, so dass die Pfeile oben auf ihnen erscheinen."
+  "admin/editor.main-layout.title": "Slider Layout",
+  "admin/editor.main-layout.infinite": "Unendlich",
+  "admin/editor.main-layout.showNavigation": "Navigationspfeile anzeigen",
+  "admin/editor.main-layout.showPaginationDots": "Seitenumbruch-Punkte anzeigen",
+  "admin/editor.main-layout.usePagination": "Seitennavigation verwenden",
+  "admin/editor.main-layout.sliderFullWidth": "Volle Breite",
+  "admin/editor.main-layout.sliderFullWidthDescription": "Legt fest, ob die Diapositive die volle verfügbare Breite füllen sollen, so dass die Pfeile oben auf ihnen erscheinen."
 }

@@ -1,12 +1,12 @@
 {
-  "slider-layout": {
+  "main-layout": {
     "component": "SliderLayout",
     "composition": "children",
     "content": {
       "$ref": "#/definitions/SliderLayout"
     }
   },
-  "slider-layout-group": {
+  "main-layout-group": {
     "component": "SliderLayoutGroup",
     "composition": "children"
   }

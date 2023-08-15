@@ -1,9 +1,9 @@
 {
-  "admin/editor.slider-layout.title": "Slider Layout",
-  "admin/editor.slider-layout.infinite": "Infinite",
-  "admin/editor.slider-layout.showNavigation": "Show navigation arrows",
-  "admin/editor.slider-layout.showPaginationDots": "Show pagination dots",
-  "admin/editor.slider-layout.usePagination": "Use pagination",
-  "admin/editor.slider-layout.sliderFullWidth": "Full width",
-  "admin/editor.slider-layout.sliderFullWidthDescription": "Controls whether the slides should fill the full available width, making the arrows appear on top of them."
+  "admin/editor.main-layout.title": "Slider Layout",
+  "admin/editor.main-layout.infinite": "Infinite",
+  "admin/editor.main-layout.showNavigation": "Show navigation arrows",
+  "admin/editor.main-layout.showPaginationDots": "Show pagination dots",
+  "admin/editor.main-layout.usePagination": "Use pagination",
+  "admin/editor.main-layout.sliderFullWidth": "Full width",
+  "admin/editor.main-layout.sliderFullWidthDescription": "Controls whether the slides should fill the full available width, making the arrows appear on top of them."
 }

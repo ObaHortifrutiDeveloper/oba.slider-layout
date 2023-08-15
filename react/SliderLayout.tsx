@@ -40,14 +40,30 @@ function SliderLayout({
 }: PropsWithChildren<SliderLayoutProps & SliderLayoutSiteEditorProps & Props>) {
   const { handles, withModifiers } = useCssHandles(CSS_HANDLES, { classes })
   const list = useListContext()?.list ?? []
+  const images: React.ReactNodeArray = list as React.ReactNodeArray
+
+  for (let i = images.length - 1; i >= 0; i--) {
+    const image = images[i] as React.ReactElement
+
+    const startDate = new Date(image.props.initialDatetime).getTime()
+    const endDate = new Date(image.props.finishDatetime).getTime()
+    const dateNow = new Date().getTime()
+
+    if (dateNow <= startDate || dateNow >= endDate) {
+      list?.splice(i, 1)
+    }
+  }
+
   const totalSlides = totalItems ?? React.Children.count(children) + list.length
   const responsiveArrowIconSize = useResponsiveValue(arrowSize)
   const responsiveItemsPerPage = useResponsiveValue(itemsPerPage)
   const responsiveCenterMode = useResponsiveValue(centerMode)
   const slides = React.Children.toArray(children).concat(list)
+
   // Force fullWidth mode when centerMode is on
   const resolvedFullWidth = fullWidth || responsiveCenterMode !== 'disabled'
 
+  console.log("🚀 ~ file: SliderLayout.tsx:69 ~ slides:", slides, list)
   return (
     <CssHandlesProvider handles={handles} withModifiers={withModifiers}>
       <SliderContextProvider
@@ -79,31 +95,31 @@ function SliderLayout({
 
 const messages = defineMessages({
   sliderTitle: {
-    id: 'admin/editor.slider-layout.title',
+    id: 'admin/editor.main-layout.title',
     defaultMessage: '',
   },
   sliderInfinite: {
-    id: 'admin/editor.slider-layout.infinite',
+    id: 'admin/editor.main-layout.infinite',
     defaultMessage: '',
   },
   sliderShowNavigation: {
-    id: 'admin/editor.slider-layout.showNavigation',
+    id: 'admin/editor.main-layout.showNavigation',
     defaultMessage: '',
   },
   sliderShowPaginationDots: {
-    id: 'admin/editor.slider-layout.showPaginationDots',
+    id: 'admin/editor.main-layout.showPaginationDots',
     defaultMessage: '',
   },
   sliderUsePagination: {
-    id: 'admin/editor.slider-layout.usePagination',
+    id: 'admin/editor.main-layout.usePagination',
     defaultMessage: '',
   },
   sliderFullWidth: {
-    id: 'admin/editor.slider-layout.sliderFullWidth',
+    id: 'admin/editor.main-layout.sliderFullWidth',
     defaultMessage: '',
   },
   sliderFullWidthDescription: {
-    id: 'admin/editor.slider-layout.sliderFullWidthDescription',
+    id: 'admin/editor.main-layout.sliderFullWidthDescription',
     defaultMessage: '',
   },
 })

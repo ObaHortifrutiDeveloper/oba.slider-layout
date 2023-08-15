@@ -1,9 +1,9 @@
 {
-  "admin/editor.slider-layout.title": "Layout slider",
-  "admin/editor.slider-layout.infinite": "Infinit",
-  "admin/editor.slider-layout.showNavigation": "Arată săgețile de navigare",
-  "admin/editor.slider-layout.showPaginationDots": "Arată punctele de paginație",
-  "admin/editor.slider-layout.usePagination": "Folosește paginația",
-  "admin/editor.slider-layout.sliderFullWidth": "Lățime completă",
-  "admin/editor.slider-layout.sliderFullWidthDescription": "Controlează dacă slide-urile trebuie sau nu să ocupe întreaga lățime disponibilă, făcând ca săgețile să apară deasupra lor."
+  "admin/editor.main-layout.title": "Layout slider",
+  "admin/editor.main-layout.infinite": "Infinit",
+  "admin/editor.main-layout.showNavigation": "Arată săgețile de navigare",
+  "admin/editor.main-layout.showPaginationDots": "Arată punctele de paginație",
+  "admin/editor.main-layout.usePagination": "Folosește paginația",
+  "admin/editor.main-layout.sliderFullWidth": "Lățime completă",
+  "admin/editor.main-layout.sliderFullWidthDescription": "Controlează dacă slide-urile trebuie sau nu să ocupe întreaga lățime disponibilă, făcând ca săgețile să apară deasupra lor."
 }

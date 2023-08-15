@@ -1,9 +1,30 @@
 {
+  // Estende o conjunto de regras "vtex"
   "extends": "vtex",
+
+  // Define que este arquivo é o arquivo de configuração raiz
   "root": true,
+
+  // Configurações de ambiente
   "env": {
+    // Define que o ambiente é Node.js
     "node": true,
     "es6": true,
     "jest": true
-  }
+  },
+
+  // Regras personalizadas
+  "rules": {
+    // Desativa a regra "no-console", permitindo o uso da função console.log()
+    "no-console": "off",
+
+    // Desativa a regra "click-events-have-key-events"
+    "click-events-have-key-events": "off"
+  },
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ]
 }
