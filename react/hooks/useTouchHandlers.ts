@@ -7,7 +7,7 @@ import {
 } from '../components/SliderContext'
 
 const SWIPE_THRESHOLD = 75
-const TOUCH_MOVE_DAMPING = 25
+const TOUCH_MOVE_DAMPING = 100
 
 export const useTouchHandlers = ({
   infinite,
